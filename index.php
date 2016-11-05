@@ -17,6 +17,19 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  #nav-menu i,#nav-menu:after,#nav-menu:before {
  	background-color: #fff;
  }
+
+ .content2 {
+	text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-align: center;
+    color: #fff;
+}
+
+.p_part {
+    width: 60%;
+    margin: 0 auto;
+}
  </style>
  
 <div class="index">
@@ -31,6 +44,10 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
 
     <h1 class="index-title"><?php $this->options->IndexName(); ?></h1>
+
+	<div class="content2">
+    <div class="p_part"><p><?php $this->options->IndexIntroduction(); ?></p>
+    </div>
 
     <div class="index-contacts">
 		<?php if ($this->options->socialgithub): ?>
