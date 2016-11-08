@@ -106,6 +106,7 @@ $("#search-Button").bind("click",function(event){
 
 </script>
 </div>
+</div>
 <!-- menu -->
 <?php $this->need('menu.php'); ?>
 
