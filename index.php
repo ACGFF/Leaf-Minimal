@@ -3,9 +3,9 @@
  * 就如一片叶子般轻松自如吧
  * 
  * @package Leaf
- * @author ihewro
+ * @author LiarOnce
  * @version 2.6
- * @link http://www.ihewro.com
+ * @link https://www.liaronceme.gq
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
