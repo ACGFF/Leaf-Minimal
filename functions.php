@@ -18,24 +18,41 @@ function themeConfig(Typecho_Widget_Helper_Form $form) {
 	$form->addInput($socialbook);
 	$socialmail = new Typecho_Widget_Helper_Form_Element_Text('socialmail', NULL, 'mailto:1062787843@qq.com', _t('输入邮箱地址'), _t('在这里输邮箱地址,如mailto:ihewro@163.com'));
 	$form->addInput($socialmail);
+    $bbs = new Typecho_Widget_Helper_Form_Element_Text('bbs', NULL, NULL, _t('输入论坛地址'), _t('论坛地址'));
+	$form->addInput($bbs);
 	
 	//首页图片
 	$indeximage = new Typecho_Widget_Helper_Form_Element_Text('indeximage', NULL, 'http://www.ihewro.com/pic/wall1.jpg', _t('输入图片地址'), _t('在这里输入首页大图地址，建议不超过1M'));
 	$form->addInput($indeximage);
-
-	//配置多说
-    $duoshuosn = new Typecho_Widget_Helper_Form_Element_Text('duoshuosn',NULL, 'hewro','配置多说short_name', '填写你的多说评论的short_name，使博客的评论系统可用,不填则不启用多说，包括不加载多说js与css<br><font color="#F40">注意：</font>这里的多说css都是主题内置好的，所以多说自定义css里的css最好清空，否则会有不美观的现象发生.<br>博主认证必须修改aseets/css/duoshuo.min.css的博主ID');
-    $duoshuosn->input->setAttribute('class', 'mini');
-    $form->addInput($duoshuosn);
-	
 	
 	//底部友链HTML代码
 	$links = new Typecho_Widget_Helper_Form_Element_Textarea('links', NULL,'<a href="https://www.liaronceme.gq/" class="link" target="_blank">LiarOnce的小站</a><i>/</i>', _t('友链样式的HTML代码'), _t('填入你的HTML代码'));
 	$form->addInput($links);
 	
 	//播放器音乐
+	//播放器列表
 	$musiclist = new Typecho_Widget_Helper_Form_Element_Textarea('musiclist', NULL,'{title:"竹取飞翔",artist:"V.A.",mp3:"http://p2.music.126.net/JfbCeSOWhY6EYeJXZq3zSA==/5698768766852980.mp3",cover:"http://p3.music.126.net/nmbBEToX0u5ve4VEb_rEHg==/2524478697438606.jpg?param=106x106",},', _t('音乐播放器的音乐列表'), _t('根据已给的格式填入你的HTML代码'));
 	$form->addInput($musiclist);
+	//播放器专辑图片旋转
+	$musicalbum = new Typecho_Widget_Helper_Form_Element_Text('musicalbum',NULL, 'true','专辑图片旋转','专辑图片旋转，可用值为 true/false，true为开启，false为关闭');
+	$musicalbum->input->setAttribute('class', 'mini');
+	$form->addInput($musicalbum);
+	//播放器自动播放
+	$musicauto = new Typecho_Widget_Helper_Form_Element_Text('musicauto',NULL, 'true','自动播放','自动播放，可用值为 true/false，true为开启，false为关闭');
+	$musicauto->input->setAttribute('class', 'mini');
+	$form->addInput($musicauto);
+
+	//Disqus API
+	//Disqus Shortname
+	$disqusshort = new Typecho_Widget_Helper_Form_Element_Text('disqusshort',NULL, NULL,'配置Disqus Shortname', '填写你设置的Disqus Shortname。<br><font color="#F40">注意：</font>Disqus API的JS和CSS资源需手动修改主题的header.php文件，否则无法正常使用，相关代码已在主题header.php中指出。');
+	$disqusshort->input->setAttribute('class', 'mini');
+	$form->addInput($disqusshort);
+        //API路径
+	$disqusapi = new Typecho_Widget_Helper_Form_Element_Text('disqusapi',NULL, NULL,'配置Disqus API地址', '填写你设置的Disqus API地址，使博客的评论系统可用,请提前设置好Disqus API相关设置');
+	$form->addInput($disqusapi);
+	//API网站
+	$disqussite = new Typecho_Widget_Helper_Form_Element_Text('disqussite',NULL, NULL,'配置Disqus API网站域名', '填写你设置的Disqus API的指定网站域名');
+	$form->addInput($disqussite);
 
 }
 

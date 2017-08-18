@@ -54,8 +54,8 @@
 <script type="text/javascript" src="<?php $this->options->themeUrl('assets/js/jquery.marquee.min.js'); ?>"></script>
 <script>
 	var	playlist = [<?php $this->options->musiclist(); ?>];
-  var isRotate = true; //专辑图片旋转，true为开启，false为关闭
-  var autoplay = true; //自动播放，true为开启，false为关闭
+  var isRotate = <?php $this->options->musicalbum(); ?>; //专辑图片旋转，true为开启，false为关闭
+  var autoplay = <?php $this->options->musicauto(); ?>; //自动播放，true为开启，false为关闭
 </script>
 <script type="text/javascript" src="<?php $this->options->themeUrl('assets/js/player.js'); ?>"></script>
 <script>
@@ -106,7 +106,6 @@ imageeffct();
  setupContents();
 lue();
 reHighlightCodeBlock();
-if ($('.ds-thread').length > 0) { if (typeof DUOSHUO !== 'undefined') DUOSHUO.EmbedThread('.ds-thread'); else $.getScript("<?php $this->options->themeUrl('assets/js/embed.js') ?>"); }
 });
 
 </script>

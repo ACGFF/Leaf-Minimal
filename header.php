@@ -21,16 +21,14 @@
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
 <?php if (!is_pjax()) { ?>
     <!-- 使用url函数转换相关路径 -->
-<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
-<script>
-        // Fallback to loading jQuery from a local path if the CDN is unavailable
-        (window.jQuery || document.write('<script src="<?php $this->options->themeUrl('assets/js/jquery.min.js'); ?>"><\/script>'));
-</script>
+<script src="<?php $this->options->themeUrl('assets/js/jquery.min.js'); ?>"></script>
 <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css">
 <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
 <script src="//cdn.bootcss.com/jquery.pjax/1.9.6/jquery.pjax.min.js"></script>
+<!-- 这行是Disqus API的JS路径 --><script src="path/to/iDisqus.min.js"></script>
 <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('assets/css/player.css'); ?>">
 <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('assets/css/zoom.css'); ?>">
+<!-- 这行是Disqus API的CSS路径 --><link rel="stylesheet" href="path/to/iDisqus.min.css" />
 
 
     <!-- fonts -->

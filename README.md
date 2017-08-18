@@ -1,11 +1,8 @@
 # Leaf-Minimal(2016-11-05更新)
+
 基于2.6版本简化而来
 
-1，现在你可以直接在外观设置调整你的多说short_name。
-
-2，同时可以在外观设置编辑介绍文字。
-
-# What is this?
+## What is this?
 没有看错，这是基于Leaf 2.6修改的主题
 
 因为不知道为什么，新版2.7用着好卡，而且对HTTPS的支持也有点烦= =（其实是我懒。。。）
@@ -14,7 +11,7 @@
 
 由于学业原因，可能没那么多时间修改它，但我会尽量挤出点时间的。
 
-# 有区别吗?
+## 有区别吗?
 当然有，虽然改动不大，但终归还是改了。
 
 1，灯箱zoom本地化。
@@ -23,8 +20,10 @@
 
 3，部分资源本地化。
 
-# 注意
-多说默认本地化，需将embed.js放在asstes/js文件夹下，或修改menu.php第109行，修改：
-```javascript
-$.getScript("改为你的embed.js路径");
+## 注意
+由于多说关闭，这里改用Disqus API作为评论系统，目前已移除所有多说相关代码。  
+现在在主题后台可以设置Disqus API相关参数，而Disqus API相关JS和CSS需手动修改`header.php`，需修改的代码已在`header.php`指出。
+```html
+<!-- 这行是Disqus API的JS路径 --><script src="path/to/iDisqus.min.js"></script>
+<!-- 这行是Disqus API的CSS路径 --><link rel="stylesheet" href="path/to/iDisqus.min.css" />
 ```

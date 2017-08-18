@@ -51,24 +51,29 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
     <div class="index-contacts">
 		<?php if ($this->options->socialgithub): ?>
-			<a class="social github" target="blank" href="<?php $this->options->socialgithub(); ?>">
+			<a title="GitHub" class="social github" target="blank" href="<?php $this->options->socialgithub(); ?>">
 				<i class="fa fa-github-alt"></i>
 			</a>
 		<?php endif; ?>
 		<?php if ($this->options->socialmail): ?>
-			<a class="social envelope" target="blank" href="<?php $this->options->socialmail(); ?>">
+			<a title="邮箱" class="social envelope" target="blank" href="<?php $this->options->socialmail(); ?>">
 				<i class="fa fa-envelope"></i>
 			</a>
 		<?php endif; ?>
-			<a class="social rss" target="blank" href="<?php $this->options->siteUrl(); ?>feed/">
+			<a title="RSS" class="social rss" target="blank" href="<?php $this->options->siteUrl(); ?>feed/">
 				<i class="fa fa-rss"></i>
 			</a>
 		<?php if ($this->options->socialbook): ?>
-			<a class="social book" target="blank" href="<?php $this->options->socialbook(); ?>">
+			<a title="文章列表" class="social book" target="blank" href="<?php $this->options->socialbook(); ?>">
 				<i class="fa fa-book"></i>
 			</a>
 		<?php endif; ?>
-			<a class="social search" id="search-Button" target="blank" href="<?php $this->options->socialweibo(); ?>">
+                <?php if ($this->options->bbs): ?>
+			<a title="社区" class="social bbs" target="blank" href="<?php $this->options->bbs(); ?>">
+				<i class="fa fa-commenting-o"></i>
+			</a>
+		<?php endif; ?>
+			<a title="搜索" class="social search" id="search-Button" target="blank" href="<?php $this->options->socialweibo(); ?>">
 				<i class="fa fa-search"></i>
 			</a>
             <div class="site-search col-3 kit-hidden-tb">
