@@ -27,3 +27,4 @@
 <!-- 这行是Disqus API的JS路径 --><script src="path/to/iDisqus.min.js"></script>
 <!-- 这行是Disqus API的CSS路径 --><link rel="stylesheet" href="path/to/iDisqus.min.css" />
 ```
+改完了记得把注释删了哦。
