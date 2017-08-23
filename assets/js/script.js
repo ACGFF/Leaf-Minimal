@@ -1,11 +1,3 @@
-//代码高亮
-        var reHighlightCodeBlock = function () {
-            $('pre code').each(function(i, block) {
-                hljs.highlightBlock(block);
-            });
-        };
-		
-		
 //首页大图动画效果
 var Leaf ={
  F: function(id, w, h) {
@@ -106,7 +98,6 @@ $(document).ready(function() {
   init.start();
 });
 
-
 //超过div内容显示省略号
 var lue = function() {
 	$(function () {  
@@ -120,3 +111,6 @@ var lue = function() {
         });  
 }
 lue();
+
+console.log("\n 自豪地采用Typecho，Theme by Leaf-Minimal，原版由ihewro移植，本版由LiarOnce进行修改");
+console.log("https://github.com/ACGFF/Leaf-Minimal");

@@ -11,15 +11,10 @@
 <i></i>
 </div>
 </div>
-<script src='<?php $this->options->themeUrl('assets/js/nprogress.js'); ?>'></script>
-<link rel='stylesheet' href='<?php $this->options->themeUrl('assets/css/nprogress.css'); ?>'/>
-<script src='<?php $this->options->themeUrl('assets/js/jquery.parallax.js'); ?>'></script>
+<script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+<link rel='stylesheet' href="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.css" />
+<script src='<?php $this->options->themeUrl('assets/js/jquery.parallax.min.js'); ?>'></script>
 <script type="text/javascript" src="<?php $this->options->themeUrl('assets/js/script.js'); ?>"></script>
-<link rel='stylesheet' href='<?php $this->options->themeUrl('assets/css/solarized-dark.css'); ?>'/>
-<script type="text/javascript" src="<?php $this->options->themeUrl('assets/js/highlight.pack.js'); ?>"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
-
 
 <!--Qpalyer author:https://32mb.space-->
 <div id="QPlayer">
@@ -51,7 +46,7 @@
 </div>
 <ol id="playlist"></ol>
 </div>
-<script type="text/javascript" src="<?php $this->options->themeUrl('assets/js/jquery.marquee.min.js'); ?>"></script>
+<script type="text/javascript" src="//cdn.bootcss.com/jQuery.Marquee/1.3.94/jquery.marquee.min.js"></script>
 <script>
 	var	playlist = [<?php $this->options->musiclist(); ?>];
   var isRotate = <?php $this->options->musicalbum(); ?>; //专辑图片旋转，true为开启，false为关闭
@@ -105,7 +100,6 @@ imageeffct();
 //linkshow();
  setupContents();
 lue();
-reHighlightCodeBlock();
 });
 
 </script>
