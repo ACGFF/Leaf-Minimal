@@ -20,6 +20,7 @@
   <div class="post-header">
     <h1 class="post-title"><?php $this->title() ?></h1>
     <p class="post-date" datetime="<?php $this->date('c'); ?>"><?php $this->date('F jS , Y'); ?></p>
+    <p class="post-author"><a href="<?php $this->author->url(); ?>" target="_blank" rel="noopener"><?php $this->author(); ?></a></p>
   </div>
 
   <!-- post content -->
