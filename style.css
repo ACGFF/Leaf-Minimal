@@ -22,6 +22,10 @@ body {
   font-family:"Microsoft YaHei", Arial, Verdana, sans-serif;
 }
 
+.post-content p {
+    text-indent: 2em;
+}  
+
 blockquote {
     margin: 10px 0px;
     padding: 5px 15px;
