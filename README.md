@@ -1,6 +1,9 @@
-# Leaf-Minimal(2016-11-05更新)
+# Leaf-Minimal(2017-08-23更新)
 
 基于2.6版本简化而来
+
+该版更新将部分JQuery库改为BootCDN处调用，如有特殊需要可自行本地化。  
+同时该版本去掉了Highlight.js代码高亮，可以自己换成喜欢的。
 
 ## What is this?
 没有看错，这是基于Leaf 2.6修改的主题
@@ -27,3 +30,4 @@
 <!-- 这行是Disqus API的JS路径 --><script src="path/to/iDisqus.min.js"></script>
 <!-- 这行是Disqus API的CSS路径 --><link rel="stylesheet" href="path/to/iDisqus.min.css" />
 ```
+改完了记得把注释删了哦。

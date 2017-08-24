@@ -19,7 +19,6 @@ p#friend-head{
   <div class="footer-text">
 		
 		<div class="footer-info">
-		<p>自豪地采用<a href="http://typecho.org" target="_blank">Typecho</a>，Theme by <a href="http://www.ihewro.com/archives/378/" target="_blank">Leaf</a>，由<a href="http://www.ihewro.com" target="_blank">ihewro</a>移植，由<a href="https://www.liaronceme.gq" target="_black">LiarOnce</a>进行修改</p>
 			&copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>" class="link"><?php $this->options->title(); ?></a>
             
 		</div>
